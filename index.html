@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="When stress becomes chronic, your body sends 10 clear warning signs. Learn to recognize them before the damage becomes irreversible.">
+<meta name="google-site-verification" content="rkPYPgRoN4N-mAgz3X7A45xlY4I4dTkPkRRg_CqPIHQ" />
+<title>When Stress Becomes Chronic: 10 Warning Signs You Shouldn't Ignore</title>
+
+<style>
+  /* ─── RESET & BASE ─── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #f8f5f0;
+    color: #1a2332;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── TOKENS ─── */
+  :root {
+    --navy:    #1a2332;
+    --cream:   #f8f5f0;
+    --sage:    #6b8f71;
+    --coral:   #c85a4a;
+    --warm-grey: #e8e3dc;
+    --mid-grey: #9a9590;
+    --text-soft: #3d4a5a;
+    --card-bg:  #ffffff;
+    --max-w: 860px;
+    --gutter: clamp(1.25rem, 5vw, 2.5rem);
+  }
+
+  /* ─── UTILITY ─── */
+  .container { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--gutter); }
+  .label {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  /* ─── SITE HEADER ─── */
+  .site-header {
+    background: var(--navy);
+    padding: 1rem var(--gutter);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .site-header .brand {
+    color: var(--cream);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .site-header .category {
+    color: var(--sage);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: var(--navy);
+    color: var(--cream);
+    padding: clamp(3rem, 8vw, 5.5rem) var(--gutter) clamp(2.5rem, 6vw, 4rem);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 38%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 40%, rgba(107,143,113,0.12) 100%);
+    pointer-events: none;
+  }
+  .hero-inner { max-width: var(--max-w); margin: 0 auto; position: relative; z-index: 1; }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--sage);
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--sage);
+  }
+
+  .hero h1 {
+    font-size: clamp(1.75rem, 4.5vw, 3rem);
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    max-width: 680px;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--coral);
+  }
+
+  .hero-deck {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    color: rgba(248,245,240,0.72);
+    max-width: 560px;
+    line-height: 1.65;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(248,245,240,0.12);
+  }
+  .stat-item { display: flex; flex-direction: column; gap: 0.2rem; }
+  .stat-num {
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    color: #fff;
+  }
+  .stat-num span { color: var(--coral); }
+  .stat-desc {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.72rem;
+    color: rgba(248,245,240,0.55);
+    letter-spacing: 0.04em;
+    max-width: 140px;
+    line-height: 1.4;
+  }
+
+  /* ─── INTRO SPLIT ─── */
+  .intro-section {
+    padding: clamp(3rem, 7vw, 5rem) var(--gutter);
+    background: var(--cream);
+  }
+  .intro-grid {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
+  }
+  .intro-sidebar {
+    position: sticky;
+    top: 2rem;
+  }
+  .intro-sidebar .section-label {
+    color: var(--coral);
+    margin-bottom: 1rem;
+  }
+  .intro-sidebar h2 {
+    font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+    line-height: 1.35;
+    font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+  }
+  .intro-sidebar .divider {
+    width: 36px;
+    height: 2px;
+    background: var(--warm-grey);
+    margin-bottom: 1.5rem;
+  }
+  .intro-sidebar p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.82rem;
+    color: var(--mid-grey);
+    line-height: 1.6;
+  }
+
+  .intro-body p {
+    font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+    color: var(--text-soft);
+    margin-bottom: 1.3rem;
+  }
+  .intro-body p:last-child { margin-bottom: 0; }
+
+  /* ─── PULL QUOTE ─── */
+  .pull-quote {
+    background: var(--navy);
+    padding: clamp(2.5rem, 6vw, 4rem) var(--gutter);
+  }
+  .pull-quote-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4px 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  .pull-quote-bar {
+    background: var(--coral);
+    height: 100%;
+    min-height: 80px;
+    border-radius: 2px;
+  }
+  .pull-quote blockquote {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: var(--cream);
+    font-style: italic;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+  }
+  .pull-quote blockquote cite {
+    display: block;
+    margin-top: 1rem;
+    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.75rem;
+    color: var(--sage);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  /* ─── ACUTE VS CHRONIC EXPLAINER ─── */
+  .explainer-section {
+    padding: clamp(3rem, 7vw, 5rem) var(--gutter);
+    background: #fff;
+  }
+  .explainer-inner { max-width: var(--max-w); margin: 0 auto; }
+  .section-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .section-heading h2 {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: 400;
+    color: var(--navy);
+    letter-spacing: -0.02em;
+  }
+  .section-heading .rule {
+    flex: 1;
+    height: 1px;
+    background: var(--warm-grey);
+  }
+
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.92rem;
+  }
+  .compare-table thead tr {
+    border-bottom: 2px solid var(--navy);
+  }
+  .compare-table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mid-grey);
+  }
+  .compare-table th:first-child { color: var(--navy); }
+  .compare-table th.sage-col { color: var(--sage); }
+  .compare-table th.coral-col { color: var(--coral); }
+  .compare-table td {
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--warm-grey);
+    color: var(--text-soft);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  .compare-table td:first-child {
+    font-weight: 600;
+    color: var(--navy);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table tr:hover td { background: var(--cream); transition: background 0.15s ease; }
+
+  /* ─── 10 SIGNS SECTION ─── */
+  .signs-section {
+    padding: clamp(3rem, 7vw, 5rem) var(--gutter);
+    background: var(--cream);
+  }
+  .signs-inner { max-width: var(--max-w); margin: 0 auto; }
+
+  .signs-intro {
+    max-width: 640px;
+    margin-bottom: 3rem;
+  }
+  .signs-intro h2 {
+    font-size: clamp(1.3rem, 2.8vw, 1.8rem);
+    font-weight: 400;
+    color: var(--navy);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+  }
+  .signs-intro p {
+    font-size: 0.95rem;
+    color: var(--text-soft);
+  }
+
+  .signs-list { display: flex; flex-direction: column; gap: 0; }
+
+  .sign-card {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 0;
+    background: var(--card-bg);
+    border: 1px solid var(--warm-grey);
+    border-top: none;
+    position: relative;
+    transition: box-shadow 0.2s ease;
+  }
+  .sign-card:first-child { border-top: 1px solid var(--warm-grey); border-radius: 6px 6px 0 0; }
+  .sign-card:last-child { border-radius: 0 0 6px 6px; }
+  .sign-card:hover { box-shadow: 0 4px 20px rgba(26,35,50,0.06); z-index: 1; }
+
+  .sign-number-col {
+    background: var(--navy);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 1.5rem;
+    position: relative;
+  }
+  .sign-card:first-child .sign-number-col { border-radius: 5px 0 0 0; }
+  .sign-card:last-child .sign-number-col { border-radius: 0 0 0 5px; }
+
+  .sign-num-label {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: rgba(248,245,240,0.35);
+    letter-spacing: 0.05em;
+    writing-mode: horizontal-tb;
+  }
+
+  .sign-content { padding: 1.5rem 1.75rem; border-left: 3px solid transparent; }
+  .sign-card:nth-child(-n+3) .sign-content { border-left-color: var(--coral); }
+  .sign-card:nth-child(n+4):nth-child(-n+7) .sign-content { border-left-color: #d4933a; }
+  .sign-card:nth-child(n+8) .sign-content { border-left-color: var(--sage); }
+
+  .sign-tag {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2em 0.6em;
+    border-radius: 3px;
+    margin-bottom: 0.6rem;
+  }
+  .tag-high { background: rgba(200,90,74,0.1); color: var(--coral); }
+  .tag-med  { background: rgba(212,147,58,0.12); color: #b87a2a; }
+  .tag-low  { background: rgba(107,143,113,0.12); color: var(--sage); }
+
+  .sign-content h3 {
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.75rem;
+    line-height: 1.35;
+  }
+  .sign-content p {
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+  .sign-content p:last-child { margin-bottom: 0; }
+
+  .insight-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--cream);
+    border: 1px solid var(--warm-grey);
+    border-radius: 20px;
+    padding: 0.3em 0.85em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.72rem;
+    color: var(--text-soft);
+    margin-top: 0.5rem;
+  }
+  .insight-pill::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: var(--sage);
+    border-radius: 50%;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  /* ─── CALLOUT BOX ─── */
+  .callout {
+    background: rgba(107,143,113,0.08);
+    border: 1px solid rgba(107,143,113,0.25);
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-soft);
+    line-height: 1.6;
+  }
+  .callout strong { color: var(--navy); }
+
+  /* ─── ACTION SECTION ─── */
+  .action-section {
+    padding: clamp(3rem, 7vw, 5rem) var(--gutter);
+    background: #fff;
+  }
+  .action-inner { max-width: var(--max-w); margin: 0 auto; }
+
+  .action-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  .action-card {
+    background: var(--cream);
+    border-radius: 6px;
+    padding: 1.5rem;
+    border-top: 3px solid var(--warm-grey);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  .action-card:hover { border-top-color: var(--sage); transform: translateY(-2px); }
+  .action-card:nth-child(1) { border-top-color: var(--coral); }
+  .action-card:nth-child(2) { border-top-color: #d4933a; }
+  .action-card:nth-child(3) { border-top-color: var(--sage); }
+
+  .action-step {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mid-grey);
+    margin-bottom: 0.6rem;
+  }
+  .action-card h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.6rem;
+    line-height: 1.3;
+  }
+  .action-card p {
+    font-size: 0.82rem;
+    color: var(--text-soft);
+    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  /* ─── CLOSING SECTION ─── */
+  .closing-section {
+    padding: clamp(3rem, 7vw, 5rem) var(--gutter);
+    background: var(--navy);
+    color: var(--cream);
+  }
+  .closing-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+  }
+  .closing-left h2 {
+    font-size: clamp(1.3rem, 2.8vw, 1.9rem);
+    font-weight: 300;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+  .closing-left h2 strong { font-weight: 600; color: var(--coral); display: block; }
+  .closing-left p {
+    font-size: 0.9rem;
+    color: rgba(248,245,240,0.65);
+    line-height: 1.7;
+  }
+
+  .closing-right { display: flex; flex-direction: column; gap: 0.75rem; }
+  .closing-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 0.9rem 1rem;
+    background: rgba(248,245,240,0.05);
+    border-radius: 5px;
+    border: 1px solid rgba(248,245,240,0.08);
+    font-size: 0.85rem;
+    color: rgba(248,245,240,0.8);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.5;
+  }
+  .check-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--sage);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .check-icon svg { width: 10px; height: 10px; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--navy);
+    border-top: 1px solid rgba(248,245,240,0.08);
+    padding: 1.5rem var(--gutter);
+  }
+  .footer-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .footer-note {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.72rem;
+    color: rgba(248,245,240,0.35);
+    line-height: 1.5;
+  }
+  .footer-note a {
+    color: var(--sage);
+    text-decoration: none;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 700px) {
+    .intro-grid { grid-template-columns: 1fr; }
+    .intro-sidebar { position: static; }
+    .action-grid { grid-template-columns: 1fr; }
+    .closing-inner { grid-template-columns: 1fr; }
+    .compare-table { font-size: 0.82rem; }
+    .compare-table th, .compare-table td { padding: 0.65rem 0.75rem; }
+    .sign-card { grid-template-columns: 36px 1fr; }
+    .sign-content { padding: 1.25rem 1.25rem; }
+    .hero-stats { gap: 1.25rem; }
+  }
+
+  @media (max-width: 480px) {
+    .sign-number-col { display: none; }
+    .sign-card { grid-template-columns: 1fr; }
+    .sign-card:first-child { border-radius: 6px 6px 0 0; }
+    .sign-card:first-child .sign-number-col { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- ─── SITE HEADER ─── -->
+<header class="site-header" role="banner">
+  <span class="brand">Mental Health &amp; Wellness</span>
+  <span class="category">Expert Guide · 2025</span>
+</header>
+
+<!-- ─── HERO ─── -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-inner">
+    <div class="hero-eyebrow label">Warning Signs</div>
+    <h1 id="hero-heading">
+      When Stress Becomes <em>Chronic:</em><br>
+      10 Signs You Shouldn't Ignore
+    </h1>
+    <p class="hero-deck">
+      Most people treat stress like a seasonal cold. They push through. They figure it will pass.
+      But for millions, stress never actually goes away — and that shift is where the real damage begins.
+    </p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">76<span>%</span></span>
+        <p class="stat-desc">of adults report physical or emotional stress symptoms (APA, 2023)</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">2<span>–3</span></span>
+        <p class="stat-desc">years of chronic stress before most patients seek professional help</p>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">10</span>
+        <p class="stat-desc">warning signs your body sends before the damage becomes irreversible</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INTRO ─── -->
+<section class="intro-section" aria-label="Introduction">
+  <div class="intro-grid">
+    <aside class="intro-sidebar">
+      <p class="label section-label">The Hidden Crisis</p>
+      <h2>Your body has been trying to tell you something.</h2>
+      <div class="divider"></div>
+      <p>A <a href="https://lotuspsychiatryandwellness.com/"> Psychiatrist Boca Raton </a> patients trust once shared something that stopped me cold: "By the time most of my patients come to see me, chronic stress has already been quietly destroying their health for two or three years."</p>
+    </aside>
+    <div class="intro-body">
+      <p>They thought they were just tired. They attributed the headaches to screen time, the gut problems to diet, the memory lapses to aging. They were wrong — and nobody told them otherwise, because chronic stress rarely announces itself through obvious anxiety.</p>
+      <p>It hides inside digestive problems, memory lapses, skin flare-ups, and sudden emotional outbursts. It wears a disguise. And most people never see through it until the consequences become significantly harder to reverse.</p>
+      <p>This guide draws the line clearly — between normal stress and the chronic version that demands real intervention — using neuroscience, peer-reviewed research, and the kind of honest clinical perspective that most wellness content refuses to offer.</p>
+      <div class="callout">
+        <strong>What you'll learn:</strong> The physiological difference between acute and chronic stress, the 10 warning signs your body sends, and exactly what to do — in plain language, without the usual platitudes.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PULL QUOTE ─── -->
+<div class="pull-quote" role="complementary">
+  <div class="pull-quote-inner">
+    <div class="pull-quote-bar" aria-hidden="true"></div>
+    <blockquote>
+      "Chronic stress is not weakness. It is not laziness. It is a physiological state your body entered in response to sustained demands — and it requires real intervention to exit."
+      <cite>Expert Clinical Perspective on Chronic Stress Management</cite>
+    </blockquote>
+  </div>
+</div>
+
+<!-- ─── ACUTE VS CHRONIC ─── -->
+<section class="explainer-section" aria-labelledby="compare-heading">
+  <div class="explainer-inner">
+    <div class="section-heading">
+      <h2 id="compare-heading">Acute vs. Chronic Stress: What's the Difference?</h2>
+      <div class="rule" aria-hidden="true"></div>
+    </div>
+    <p style="color: var(--text-soft); font-size: 0.95rem; margin-bottom: 1.75rem; max-width: 640px;">
+      Acute stress is your body doing exactly what it was designed to do. The threat passes, and your nervous system returns to baseline. Chronic stress is what happens when it doesn't — or when your system forgets how.
+    </p>
+    <table class="compare-table" role="table" aria-label="Acute vs Chronic Stress Comparison">
+      <thead>
+        <tr>
+          <th scope="col">Factor</th>
+          <th scope="col" class="sage-col">Acute Stress (Normal)</th>
+          <th scope="col" class="coral-col">Chronic Stress (Dangerous)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Duration</td>
+          <td>Minutes to hours</td>
+          <td>Weeks, months, or years</td>
+        </tr>
+        <tr>
+          <td>Cortisol</td>
+          <td>Spikes, then normalizes</td>
+          <td>Stays elevated, causing systemic damage</td>
+        </tr>
+        <tr>
+          <td>HPA Axis</td>
+          <td>Activates, then resets</td>
+          <td>Remains dysregulated; no reset</td>
+        </tr>
+        <tr>
+          <td>Brain Impact</td>
+          <td>Sharpens focus temporarily</td>
+          <td>Shrinks prefrontal cortex; damages hippocampus</td>
+        </tr>
+        <tr>
+          <td>Immune System</td>
+          <td>Temporarily boosted</td>
+          <td>Suppressed; natural killer cell activity reduced</td>
+        </tr>
+        <tr>
+          <td>What it feels like</td>
+          <td>Manageable pressure</td>
+          <td>Exhaustion that sleep doesn't fix</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ─── 10 WARNING SIGNS ─── -->
+<main class="signs-section" aria-labelledby="signs-heading">
+  <div class="signs-inner">
+    <div class="signs-intro">
+      <p class="label" style="color: var(--coral); margin-bottom: 0.5rem;">The Core of This Guide</p>
+      <h2 id="signs-heading">10 Warning Signs Your Stress Has Become Chronic</h2>
+      <p>These are not signs of weakness. They are neurological and physiological consequences of a body under sustained demand — and each one is clinically documented.</p>
+    </div>
+
+    <ol class="signs-list" aria-label="10 warning signs of chronic stress">
+
+      <li class="sign-card">
+        <div class="sign-number-col" aria-hidden="true"><span class="sign-num-label">01</span></div>
+        <div class="sign-content">
+          <span class="sign-tag tag-high">High Urgency</span>
+          <h3>You Cannot Remember the Last Time You Felt Truly Rested</h3>
+          <p>Sleep problems and chronic stress share a deeply circular relationship. Elevated cortisol disrupts melatonin production. Poor sleep raises cortisol further. People describe sleeping eight hours and waking up exhausted — as if sleep gave them nothing.</p>
+          <p>Your nervous system may never be fully downregulating at night. This is not a sleep disorder. It is a stress disorder wearing one as a disguise.</p>
+          <span class="insight-pill">Sleep Medicine Reviews (2021): chronic stress sufferers reported non-restorative sleep at 3.4× the rate of low-stress controls</span>
+        </div>
+      </li>
+
+      <li class="sign-card">
+        <div class="sign-number-col" aria-hidden="true"><span class="sign-num-label">02</span></div>
+        <div class="sign-content">
+          <span class="sign-tag tag-high">High Urgency</span>
+          <h3>Your Digestion Has Changed Without Any Clear Medical Cause</h3>
+          <p>The gut-brain axis is real, and chronic stress attacks it hard. Elevated glucocorticoids alter gut motility, reduce digestive enzyme secretion, and disrupt microbiome composition within weeks of sustained stress exposure.</p>
+          <p>What does this look like in real life? IBS symptoms appearing in your late 30s. Bloating after meals that never bothered you before. Unexplained nausea on workday mornings. Many people spent years chasing a gastroenterology diagnosis before a therapist finally asked about their stress levels.</p>
+          <span class="insight-pill">Frontiers in Psychiatry (2022): strong bidirectional links confirmed across 14 countries</span>
+        </div>
+      </li>
+
+      <li class="sign-card">
+        <div class="sign-number-col" aria-hidden="true"><span class="sign-num-label">03</span></div>
+        <div class="sign-content">
+          <span class="sign-tag tag-high">High Urgency</span>
+          <h3>Small Frustrations Trigger Disproportionate Emotional Reactions</h3>
+          <p>Have you snapped at someone over something genuinely minor and felt confused by your own reaction? Chronic cortisol exposure literally shrinks the prefrontal cortex — the brain region responsible for emotional regulation and impulse control.</p>
+          <p>Simultaneously, the amygdala becomes hyperactivated. The result is a brain that overreacts to small threats because it has lost its ability to accurately assess scale. This is not a character flaw. It is a neurological consequence of unmanaged chronic stress.</p>
+        </div>
+      </li>
+
+      <li class="sign-card">
+        <div class="sign-number-col" aria-hidden="true"><span class="sign-num-label">04</span></div>
+        <div class="sign-content">
+          <span class="sign-tag tag-med">Moderate Urgency</span>
+          <h3>Your Memory and Concentration Have Noticeably Declined</h3>
+          <p>Struggling to finish a sentence. Walking into a room and forgetting why. Reading the same paragraph four times. These cognitive symptoms send many people straight to neurologists fearing early dementia. Often, chronic stress is the actual culprit.</p>
+          <p>Sustained cortisol elevation damages the hippocampus — your brain's memory consolidation hub — and impairs working memory function.</p>
+          <span class="insight-pill">Neuron (2018): measurable hippocampal volume reduction confirmed after 18 months of chronic psychosocial stress</span>
+        </div>
+      </li>
+
+      <li class="sign-card">
+        <div class="sign-number-col" aria-hidden="true"><span class="sign-num-label">05</span></div>
+        <div class="sign-content">
+          <span class="sign-tag tag-med">Moderate Urgency</span>
+          <h3>You Have Developed New or Worsening Physical Pain</h3>
+          <p>Chronic stress triggers systemic inflammation through elevated interleukin-6 and C-reactive protein. That inflammation manifests as physical pain — tension headaches appearing three or four days per week, jaw tightness (a classic sign dentists often catch first), lower back pain, and muscle tension that never fully releases.</p>
+          <p>If massage therapy only temporarily relieves a persistent ache between your shoulder blades, stress-driven inflammation deserves serious consideration as a root cause.</p>
+        </div>
+      </li>
+
+      <li class="sign-card">
+        <div class="sign-number-col" aria-hidden="true"><span class="sign-num-label">06</span></div>
+        <div class="sign-content">
+          <span class="sign-tag tag-med">Moderate Urgency</span>
+          <h3>Your Immune System Has Become Unreliable</h3>
+          <p>Getting sick more frequently than you used to? Taking longer to recover from minor illnesses? Chronic stress suppresses immune function through cortisol's inhibitory effect on natural killer cell activity and T-lymphocyte proliferation.</p>
+          <p>In practical terms: more frequent colds, more cold sore outbreaks, and slower healing. Your immune system is running below capacity because chronic stress is consuming resources that should be allocated elsewhere.</p>
+        </div>
+      </li>
+
+      <li class="sign-card">
+        <div class="sign-number-col" aria-hidden="true"><span class="sign-num-label">07</span></div>
+        <div class="sign-content">
+          <span class="sign-tag tag-med">Moderate Urgency</span>
+          <h3>You Have Lost Genuine Interest in Things That Used to Excite You</h3>
+          <p>This one requires careful attention because it overlaps with clinical depression — which often develops as a downstream consequence of untreated chronic stress. Anhedonia (loss of pleasure) appears when dopamine signaling becomes dysregulated under sustained stress conditions.</p>
+          <p>The hobby you loved, the social plans you used to enjoy — they begin to feel like obligations or, worse, like nothing at all.</p>
+          <div class="callout" style="margin-top: 0.75rem; margin-bottom: 0;">
+            If this shift has lasted more than two weeks, treat it as a signal worth discussing with a mental health professional.
+          </div>
+        </div>
+      </li>
+
+      <li class="sign-card">
+        <div class="sign-number-col" aria-hidden="true"><span class="sign-num-label">08</span></div>
+        <div class="sign-content">
+          <span class="sign-tag tag-low">Watch Closely</span>
+          <h3>Your Relationship With Food Has Shifted Dramatically</h3>
+          <p>Chronic stress dysregulates appetite through competing hormonal mechanisms. Some people stop feeling hungry entirely (cortisol suppressing appetite signaling). Others experience intense cravings for high-calorie, high-sugar foods (the brain seeking rapid dopamine relief).</p>
+          <p>Neither pattern is about willpower. Both are stress responses operating through biochemistry. Food-based coping strategies, while temporarily soothing, accelerate inflammation and worsen the underlying stress burden over time.</p>
+        </div>
+      </li>
+
+      <li class="sign-card">
+        <div class="sign-number-col" aria-hidden="true"><span class="sign-num-label">09</span></div>
+        <div class="sign-content">
+          <span class="sign-tag tag-low">Watch Closely</span>
+          <h3>You Feel Socially Withdrawn, Even From People You Love</h3>
+          <p>Social withdrawal under chronic stress is partly neurological and partly protective. The exhausted prefrontal cortex finds social interaction cognitively demanding. Conversation requires presence, responsiveness, and emotional attunement — all compromised when your nervous system is perpetually dysregulated.</p>
+          <p>The cruel irony: social connection is one of the most powerful biological buffers against chronic stress, as documented in Harvard's 80-year Study of Adult Development. Withdrawing removes the very antidote most needed.</p>
+        </div>
+      </li>
+
+      <li class="sign-card">
+        <div class="sign-number-col" aria-hidden="true"><span class="sign-num-label">10</span></div>
+        <div class="sign-content">
+          <span class="sign-tag tag-low">Watch Closely</span>
+          <h3>You Cannot Imagine Life Without This Level of Stress</h3>
+          <p>This is the sign most people overlook entirely. When stress becomes chronic, it stops feeling exceptional and starts feeling normal. Patients describe it as: "I've forgotten what it feels like to not feel this way."</p>
+          <p>That normalization is itself the warning sign. Your nervous system has recalibrated its baseline upward. What felt alarming at the start now feels like Tuesday. This adaptation makes chronic stress harder to recognize — and far harder to treat without professional support.</p>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+</main>
+
+<!-- ─── ACTION STEPS ─── -->
+<section class="action-section" aria-labelledby="action-heading">
+  <div class="action-inner">
+    <div class="section-heading">
+      <h2 id="action-heading">What Should You Actually Do About This?</h2>
+      <div class="rule" aria-hidden="true"></div>
+    </div>
+    <p style="color: var(--text-soft); font-size: 0.95rem; max-width: 600px;">
+      Stop waiting for the stress to resolve on its own. Chronic stress is not a mindset problem that meditation apps solve. Here are three concrete steps — in order of priority.
+    </p>
+    <div class="action-grid">
+      <article class="action-card">
+        <div class="action-step">Step One</div>
+        <h3>Stop Waiting for It to Pass</h3>
+        <p>Chronic stress does not self-resolve. Every week you delay is another week of elevated cortisol, hippocampal damage, and systemic inflammation. Recognizing this is urgent — not panic-inducing, but honest.</p>
+      </article>
+      <article class="action-card">
+        <div class="action-step">Step Two</div>
+        <h3> <a href="https://michaeljohnson885.github.io/mentalhealth/"> Get a Proper Evaluation </a></h3>
+        <p>A psychiatrist or psychologist can differentiate between chronic stress, generalized anxiety disorder, burnout, and major depressive disorder. These share symptoms but require meaningfully different treatment approaches.</p>
+      </article>
+      <article class="action-card">
+        <div class="action-step">Step Three</div>
+        <h3>Address the Lifestyle Debt</h3>
+        <p>150 minutes of moderate aerobic exercise per week measurably reduces cortisol reactivity. MBSR (Mindfulness-Based Stress Reduction) is effective as part of a comprehensive plan. That is not optional self-care. That is medicine.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CLOSING ─── -->
+<section class="closing-section" aria-labelledby="closing-heading">
+  <div class="closing-inner">
+    <div class="closing-left">
+      <h2 id="closing-heading">
+        The Bottom Line
+        <strong>Take the Signs Seriously.</strong>
+      </h2>
+      <p>The ten signs above are not a checklist to quietly acknowledge and set aside. They are your body's way of communicating something important before the consequences become significantly harder to reverse. How many of these are you currently living with?</p>
+    </div>
+    <div class="closing-right" role="list" aria-label="Key takeaways">
+      <div class="closing-check" role="listitem">
+        <span class="check-icon" aria-hidden="true">
+          <svg viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4l2.5 2.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        Chronic stress is physiological — not a character flaw or weakness
+      </div>
+      <div class="closing-check" role="listitem">
+        <span class="check-icon" aria-hidden="true">
+          <svg viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4l2.5 2.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        The brain measurably changes under prolonged stress — and can recover
+      </div>
+      <div class="closing-check" role="listitem">
+        <span class="check-icon" aria-hidden="true">
+          <svg viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4l2.5 2.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        Early professional intervention dramatically improves outcomes
+      </div>
+      <div class="closing-check" role="listitem">
+        <span class="check-icon" aria-hidden="true">
+          <svg viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 4l2.5 2.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        Normalization of stress is itself a warning sign — don't ignore it
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <p class="footer-note">
+      This article is for educational purposes and does not constitute medical advice.<br>
+      If you are experiencing symptoms of chronic stress, please consult a qualified mental health professional.
+    </p>
+    <p class="footer-note" style="text-align: right;">
+      Sources: APA Stress in America 2023 &middot; <em>Sleep Medicine Reviews</em> 2021<br>
+      <em>Frontiers in Psychiatry</em> 2022 &middot; <em>Neuron</em> 2018 &middot; Harvard Study of Adult Development
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
